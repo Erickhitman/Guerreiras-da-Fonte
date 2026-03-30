@@ -136,42 +136,6 @@ section {
   overflow: visible;
 }
 
-@media (max-width: 768px) {
-  .nav-header {
-    height: auto;
-    min-height: 6rem;
-  }
-
-  .linha-inferior {
-    align-items: center;
-    overflow: visible;
-  }
-
-  .linha-inferior > h1 {
-    font-size: 0.85rem;
-  }
-
-  .linha-inferior > h1 > span {
-    font-size: 0.6rem;
-    text-transform: none;
-    font-family: "Roboto";
-  }
-
-  .nav-btn {
-    display: none !important;
-  }
-
-  .superior > figure {
-    position: static;
-    width: 6rem;
-  }
-
-  .superior figure > img {
-    width: 6rem;
-    height: 6rem;
-  }
-}
-
 .superior {
   display: flex;
   justify-content: start;
@@ -660,4 +624,61 @@ footer {
 
 .f-nav-txt a:hover > p {
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .nav-header {
+    height: auto;
+    min-height: 6rem;
+  }
+
+  .linha-inferior {
+    align-items: center;
+    overflow: visible;
+  }
+
+  .linha-inferior > h1 {
+    font-size: 0.85rem;
+  }
+
+  .linha-inferior > h1 > span {
+    font-size: 0.6rem;
+    text-transform: none;
+    font-family: "Roboto";
+  }
+
+  .nav-btn {
+    display: none !important;
+  }
+
+  .superior > figure {
+    position: static;
+    width: 6rem;
+  }
+
+  .superior figure > img {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .f-div {
+    flex-direction: column;
+  }
+
+  .f-title {
+    margin-right: 0;
+  }
+
+  .f-title > h1 {
+    font-size: 3.5rem;
+  }
+
+  .f-nav {
+    gap: 2rem;
+    justify-content: flex-start;
+  }
+
+  footer {
+    padding: 2rem 1.5rem 1rem;
+  }
 }
