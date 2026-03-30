@@ -46,7 +46,7 @@ O site foi desenvolvido com foco em identidade visual forte, utilizando as cores
  
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seuusuario/guerreiras-da-fonte.git
+git clone https://github.com/Erickhitman/Guerreiras-da-Fonte.git
 ```
 2. Abra o arquivo `index.html` no navegador.
  
