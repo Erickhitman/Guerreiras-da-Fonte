@@ -85,7 +85,7 @@
     160deg,
     #cf2e2e 0%,
     #ffffff 45%,
-    #0063ac 100%
+    #0063ac 80%
   );
   --line-gradient: linear-gradient(to right, #ff6900, #cf2e2e);
   --wp--preset--gradient--deep-night: linear-gradient(
@@ -566,6 +566,166 @@ section {
   text-decoration: none;
   color: #7a1a1a;
   font-size: 1.2rem;
+}
+
+.secao {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+  border-bottom: 1px solid var(--wp--preset--color--luminous-vivid-amber);
+}
+
+.secao-title {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.jogadoras {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+}
+
+.jog-card {
+  width: 15vw;
+  height: 36vh;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.jog-card:hover {
+  transform: scale(1.03);
+}
+
+.jog-card > figure {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  background: #ffffff0f;
+}
+
+.jog-card > figure > img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+.info {
+  background: #cf2e2e;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.number {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-button);
+  margin: 0;
+  min-width: 24px;
+}
+
+.nome {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+.pos {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-style: italic;
+}
+
+.destaque-jog{
+  padding: 0.3rem;
+  border-radius: 1.2rem;
+  background: var(--wp--preset--gradient--blush-bordeaux);
+  background-size: 300% 300%;
+  animation: borderSpin 3s ease infinite;
+}
+
+@keyframes borderSpin {
+  0%   { background-position: 0% }
+  50%  { background-position: 100% }
+  100% { background-position: 0%}
+}
+
+.destaques-title{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 76rem;
+  margin-top: 1rem;
+  padding-top: 0;
+}
+
+.destaques-title > h2{
+  color: #ffffff00;
+  font-size: 2rem;
+  font-family: "Archivo Black", sans-serif;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  background: var(--wp--preset--gradient--cool-to-warm-spectrum);
+  background-size: 300% 300%;
+  animation: borderSpin 5s ease infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.destaques{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 76rem;
+  margin-bottom: 2rem;
+}
+
+.destaques > div{
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.destaques > div > h3{
+  background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red);
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: #ffffff00;
+  font-weight: 500;
+  font-family: "Roboto";
+  font-size: 1.3rem;
+}
+
+.destaques > div > p{
+  color: #f8f8f5;
+  font-size: 1rem;
+  font-weight: 300;
+  padding-bottom: 2rem;
+  letter-spacing: 0.05em;
 }
 
 footer {
