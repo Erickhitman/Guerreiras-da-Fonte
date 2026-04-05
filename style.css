@@ -802,11 +802,11 @@ footer {
   }
 
   .linha-inferior > h1 {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
 
   .linha-inferior > h1 > span {
-    font-size: 0.6rem;
+    font-size: 1rem;
     text-transform: none;
     font-family: "Roboto";
   }
@@ -844,6 +844,41 @@ footer {
 
   footer {
     padding: 2rem 1.5rem 1rem;
+  }
+  .hist {
+    margin-left: 0;
+    padding: 0 1rem;
+    width: auto;
+  }
+
+  .hero-hist {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .hist-prg {
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .frase-hist {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .elenco-title{
+    margin-left: 0;
+    padding: 0 1rem;
+  }
+  
+  .title{
+    margin-left: 0;
+    padding: 0 1rem;
+  }
+
+  .title-txt{
+    font-size: 2rem;
   }
 }
  
