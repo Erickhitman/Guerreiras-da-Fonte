@@ -594,7 +594,8 @@ section {
 }
 
 .jog-card {
-  width: 15vw;
+  width: 15rem;
+  min-width: 10rem;
   height: 36vh;
   border-radius: 1rem;
   overflow: hidden;
@@ -840,5 +841,13 @@ footer {
 
   footer {
     padding: 2rem 1.5rem 1rem;
+  }
+}
+ 
+@media (max-width: 1150px){
+  .jogadoras{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
 }
