@@ -676,7 +676,8 @@ section {
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  width: 76rem;
+  max-width: 76rem;
+  width: 100%;
   margin-top: 1rem;
   padding-top: 0;
 }
@@ -699,13 +700,15 @@ section {
 .destaques{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 76rem;
+  max-width: 76rem;
+  width: 100%;
   margin-bottom: 2rem;
 }
 
 .destaques > div{
   max-width: 30rem;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   margin-top: 2rem;
 }
@@ -849,5 +852,23 @@ footer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+  }
+  .destaques{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+  }
+  .destaques > div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+  }
+  .destaques-title{
+    flex-wrap: wrap;
+    margin-left: 1.5rem;
   }
 }
